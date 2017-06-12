@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:orientation="vertical">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_location"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/ll_item_location"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -38,8 +39,8 @@
         android:maxLines="1"
         android:paddingLeft="10dp"
         android:text="北京"
-        android:visibility="gone"
-        android:textSize="@dimen/textsize"/>
+        android:textSize="@dimen/textsize"
+        android:visibility="gone"/>
 
     <TextView
         android:layout_width="match_parent"
