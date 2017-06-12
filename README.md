@@ -1,14 +1,14 @@
 
 
 使用高德地图SDK实现微信、手机QQ发送位置定位功能。
-先上效果图：
-![](http://upload-images.jianshu.io/upload_images/6420165-149eda42b86b8f11.gif?imageMogr2/auto-orient/strip)
-####具体功能：
+
+具体功能：
+
 - 定位当前位置，并显示周围地标
 - 拖动地图获取地图中间位置，并显示周围地标
 - 搜索指定位置，并显示周围地标
 
-####功能实现：
+功能实现：
 配置高德，监听定位
 ```java
    // 自定义定位蓝点图标
@@ -65,8 +65,11 @@ mMap.setLocationSource()
             }
             mlocationClient = null;
         }
-    }```
+    }
+```
+	
 定位成功，显示当前位置
+
 ```java
     private class MyAMapLocationListener implements AMapLocationListener {
         @Override
