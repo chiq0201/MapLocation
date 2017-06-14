@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.amap.api.location.AMapLocation;
 import com.amap.api.location.AMapLocationClient;
@@ -251,7 +252,11 @@ public class LocationActivity extends AppCompatActivity implements View.OnClickL
     }
 
     private void thisFinish(){
-        if (backPoiItem == null&&poiItems!=null) {
+        if (backPoiItem == null) {
+            if (poiItems.size()<1){
+                Toast.makeText(this,"请等待数据加载完成。",Toast.LENGTH_SHORT).show();
+                return;
+            }
             backPoiItem = poiItems.get(0);
         }
         Intent intent = new Intent();
